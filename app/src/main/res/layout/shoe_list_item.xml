@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--Add a ShoeViewModel data binding variable-->
+    <data>
+        <variable
+            name="shoeViewModel"
+            type="com.udacity.shoestore.models.ShoeViewModel" />
+    </data>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/shoe_name_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{@string/quote_format(shoeViewModel.shoeNameLive)}"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/shoe_company_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{@string/quote_format(shoeViewModel.shoeCompanyLive)}"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/shoe_description_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{@string/quote_format(shoeViewModel.shoeDescriptionLive)}"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/shoe_size_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{@string/quote_format(shoeViewModel.shoeSizeLive)}"
+            android:layout_weight="1" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

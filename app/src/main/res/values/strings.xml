@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ShoeStore</string>
+    <string name="email_address_text">Email Address</string>
+    <string name="password_text">Password</string>
+    <string name="email_address_hint">Please enter email address</string>
+    <string name="new_login_text">New Login</string>
+    <string name="existing_acc_text">Existing Account Login</string>
+    <string name="welcome_user">"Welcome... "</string>
+    <string name="email_confirmation_text">Yout email is ...</string>
+    <string name="instructions_text">Instructions</string>
+    <string name="instruction_text">The future of our planet is being decided in every present-day decision we make. As a brand rooted in youth culture, we recognize the responsibility we have to protect the environment for future generations. We’re committed to reducing our impact on the planet by eliminating single use plastics, reimagining the life cycle of our products, and providing our Vans family with resources and education to be more sustainable in the choices they make each day, both personally and in business.</string>
+    <string name="lets_see_shoes_text">Lets see some shoes!</string>
+    <string name="continue_button_text">Continue</string>
+    <string name="logout_string">Logout</string>
+    <string name="add_shoe_text">Add new shoe:</string>
+    <string name="save_btn">Save</string>
+    <string name="quote_format">\"%s\"</string>
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.android.navigation.WelcomeFragment">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/welcome_textview"
+        style="@style/login_textview_style"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_user"
+        app:layout_constraintBottom_toTopOf="@+id/email_confirmation_textview"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/email_confirmation_textview"
+        style="@style/login_textview_style"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/email_confirmation_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/nav_instructions_button"
+        style="@style/login_button_style"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/instructions_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_confirmation_textview" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
