@@ -11,7 +11,7 @@
 
     <TextView
         android:id="@+id/instruction_text"
-        style="@style/login_textview_style"
+        style="@style/standard_textview_style"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/instruction_text"
@@ -23,7 +23,7 @@
 
     <TextView
         android:id="@+id/lets_see_text"
-        style="@style/login_textview_style"
+        style="@style/standard_textview_style"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/lets_see_shoes_text"
@@ -34,7 +34,7 @@
 
     <Button
         android:id="@+id/shoe_list_button"
-        style="@style/login_button_style"
+        style="@style/blue_button_style"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/continue_button_text"

@@ -16,24 +16,42 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
-    <style name="login_textview_style">
+    <style name="standard_textview_style">
         <item name="android:layout_marginStart">16dp</item>
         <item name="android:layout_marginEnd">16dp</item>
         <item name="android:textAlignment">center</item>
         <item name="android:textSize">18sp</item>
+        <item name="fontFamily">@font/roboto_light</item>
     </style>
 
-    <style name="login_edittext_style">
+    <style name="standard_edittext_style">
         <item name="android:layout_marginStart">16dp</item>
         <item name="android:layout_marginTop">16dp</item>
         <item name="android:layout_marginEnd">16dp</item>
+        <item name="fontFamily">@font/roboto_light</item>
         <item name="android:ems">10</item>
     </style>
 
-    <style name="login_button_style">
+    <style name="blue_button_style">
         <item name="android:layout_marginStart">16dp</item>
         <item name="android:layout_marginTop">16dp</item>
         <item name="android:layout_marginEnd">16dp</item>
+        <item name="backgroundTint">@color/standardColor</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="fontFamily">@font/roboto_light</item>
+    </style>
+
+    <style name="shoe_list_item_txt_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">4dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginEnd">4dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">16sp</item>
+        <item name="fontFamily">@font/roboto_light</item>
     </style>
 
 </resources>
