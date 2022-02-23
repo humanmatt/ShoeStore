@@ -27,41 +27,69 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="378dp"
                 android:layout_height="match_parent"
-                android:layout_marginStart="8dp"
-                android:layout_marginEnd="8dp"
-                android:weightSum="4"
-                android:orientation="horizontal">
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:orientation="horizontal"
+                android:weightSum="4">
 
-                <TextView
-                    android:id="@+id/shoe_name_textView"
-                    style="@style/shoe_list_item_txt_style"
-                    android:text="@{shoeViewModel.name}" />
+                <LinearLayout style="@style/vertical_linear_layout_parent_style">
 
-                <TextView
-                    android:id="@+id/shoe_company_textView"
-                    style="@style/shoe_list_item_txt_style"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@{shoeViewModel.company}" />
+                    <TextView
+                        android:id="@+id/shoe_name_title_textView"
+                        style="@style/shoe_list_item_txt_style"
+                        android:text="@string/shoe_name_label" />
 
-                <TextView
-                    android:id="@+id/shoe_description_textView"
-                    style="@style/shoe_list_item_txt_style"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@{shoeViewModel.description}" />
+                    <TextView
+                        android:id="@+id/shoe_name_textView"
+                        style="@style/shoe_list_item_txt_style"
+                        android:text="@{shoeViewModel.name}" />
 
-                <TextView
-                    android:id="@+id/shoe_size_textView"
-                    style="@style/shoe_list_item_txt_style"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@{@string/quote_format(shoeViewModel.size)}" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/vertical_linear_layout_parent_style">
+
+                    <TextView
+                        android:id="@+id/shoe_company_title_textView"
+                        style="@style/shoe_list_item_txt_style"
+                        android:text="@string/shoe_company_label" />
+
+                    <TextView
+                        android:id="@+id/shoe_company_textView"
+                        style="@style/shoe_list_item_txt_style"
+                        android:text="@{shoeViewModel.company}" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/vertical_linear_layout_parent_style">
+
+                    <TextView
+                        android:id="@+id/shoe_detail_title_textView"
+                        style="@style/shoe_list_item_txt_style"
+                        android:text="@string/shoe_detail_label" />
+
+                    <TextView
+                        android:id="@+id/shoe_description_textView"
+                        style="@style/shoe_list_item_txt_style"
+                        android:text="@{shoeViewModel.description}" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/vertical_linear_layout_parent_style">
+
+                    <TextView
+                        android:id="@+id/shoe_size_title_textView"
+                        style="@style/shoe_list_item_txt_style"
+                        android:text="@string/shoe_size_label" />
+
+                    <TextView
+                        android:id="@+id/shoe_size_textView"
+                        style="@style/shoe_list_item_txt_style"
+                        android:text="@{@string/quote_format(shoeViewModel.size)}" />
+
+                </LinearLayout>
+
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>

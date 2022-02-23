@@ -42,7 +42,7 @@
     </style>
 
     <style name="shoe_list_item_txt_style">
-        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginStart">4dp</item>
         <item name="android:layout_marginTop">4dp</item>
@@ -52,6 +52,14 @@
         <item name="android:gravity">center</item>
         <item name="android:textSize">16sp</item>
         <item name="fontFamily">@font/roboto_light</item>
+    </style>
+
+    <style name="vertical_linear_layout_parent_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_margin">3dp</item>
     </style>
 
 </resources>

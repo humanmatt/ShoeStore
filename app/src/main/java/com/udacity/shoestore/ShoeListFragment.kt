@@ -25,7 +25,7 @@ class ShoeListFragment : Fragment(){
             inflater, R.layout.fragment_shoe_list, container, false
         )
 
-        // Action Bar Share
+        // Action bar set menu
         setHasOptionsMenu(true)
 
         binding.lifecycleOwner = this
@@ -33,6 +33,7 @@ class ShoeListFragment : Fragment(){
         // Observer creating views based on items in list
         viewModel.shoeListLive.observe(viewLifecycleOwner, Observer { shoeList ->
 
+            // For each item in shoeList add view
             for (shoe in shoeList) {
 
                 val shoeItemBinding = ShoeListItemBinding.inflate(layoutInflater)
@@ -44,6 +45,7 @@ class ShoeListFragment : Fragment(){
 
         })
 
+        // Floating action button
         binding.addShoeFab.setOnClickListener { view: View ->
             view.findNavController().navigate(R.id.action_shoeListFragment_to_shoeDetailFragment)
         }
@@ -52,12 +54,14 @@ class ShoeListFragment : Fragment(){
         return binding.root
     }
 
+    // Inflate menu item
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         super.onCreateOptionsMenu(menu, inflater)
         inflater.inflate(R.menu.overflow_menu, menu)
 
     }
 
+    // Menu option Item Selected
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         // Sharing from the Menu
         when (item.itemId) {
